@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Puppet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <main id="stageWrap">
+    <div id="stage">
+      <img id="bg" alt="" hidden>
+      <canvas id="cv"></canvas>
+      <div id="hud"><span id="hudKeys"></span></div>
+    </div>
+  </main>
+
+  <aside id="panel">
+    <header>
+      <h1>🎭 Digital Puppet</h1>
+      <div class="row">
+        <button id="btnFull" title="Fullscreen stage">⛶ Fullscreen</button>
+        <button id="btnHide" title="Hide / show panel (Tab)">Hide panel (Tab)</button>
+      </div>
+    </header>
+    <nav id="tabs"></nav>
+    <div id="tabBody"></div>
+  </aside>
+  <button id="btnShow" hidden title="Show panel (Tab)">☰</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
